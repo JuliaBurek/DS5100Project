@@ -236,11 +236,12 @@ def combo(self):
 
 
 ### Manifest
+- .gitignore
+- FinalProjectSubmissionTemplate.ipynb
+- LICENSE
 - README.md
+- __init__.py
 - montecarlo.py
 - montecarlo_tests.py
 - montecarlo_tests.txt
-- FinalProjectSubmissionTemplate.ipynb
 - setup.py
-- __init__.py
-
