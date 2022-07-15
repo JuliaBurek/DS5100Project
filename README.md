@@ -3,6 +3,9 @@ Julia Burek (jeb5pb)
 
 ### Synopsis
 ##### Installing
+```
+!pip install -e .
+```
 
 ##### Importing
 
