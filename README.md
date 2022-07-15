@@ -16,9 +16,10 @@ Dieobject = Die([1,2,3,4])
 Dieobject.faces
 Dieobject.weights(2,10)
 ```
+```
 	1	2	3	4
 0	1.0	10.0	1.0	1.0
-
+```
 ##### Playing games
 
 
