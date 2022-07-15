@@ -118,7 +118,9 @@ A die has a number of “faces” and weights, and can be rolled to select a fac
 ```
 def __init__(self, faces):
         '''
-       The init method initializes the die with an array of faces as an argument. It initializes the weights to 1.0 for each face and saves both faces and weights to a dataframe that is used for other methods in the class.
+        The init method initializes the die with an array of faces as an argument.
+	It initializes the weights to 1.0 for each face and saves both faces and weights 
+	to a dataframe that is used for other methods in the class.
     
         PURPOSE: Given an array of faces, initializes the weights to 1.0 for each face. Saves faces and weights to a dataframe.
     
