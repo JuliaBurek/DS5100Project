@@ -67,14 +67,24 @@ dtype: int64
 - Combo Method
 ```
 die1 = Die([1,2,3,4])
-die1.weights(2,10)
 die2 = Die([1,2,3,4])
-die2.weights(2,10)
 Gameobject = Game([die1,die2])
-Gameobject.play(100)
+Gameobject.play(10)
+Analyzerobject = Analyzer(Gameobject)
 Analyzerobject.combo()
 ```
 ```
+
+		Count
+Die 1	Die 2	
+1	1	1
+	3	1
+	4	1
+2	1	2
+3	1	1
+	2	1
+4	3	1
+	4	2
 
 ```
 
@@ -86,6 +96,7 @@ die2 = Die([1,2,3,4])
 die2.weights(2,10)
 Gameobject = Game([die1,die2])
 Gameobject.play(10)
+Analyzerobject = Analyzer(Gameobject)
 Analyzerobject.faceCountsPerRoll()
 ```
 ```
