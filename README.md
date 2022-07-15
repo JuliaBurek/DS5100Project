@@ -164,8 +164,8 @@ results of its most recent play.
     def __init__(self, die_obj):
         The init method initializes a die object from the Die class and an empty dataframe to be used in the other methods.
 ```
-- die_obj:
-- gamedf: 
+- die_obj: list of already instantiated similar Die objects from Die class
+- gamedf: empty dataframe to be used in other methods
 
 
 ```
@@ -174,8 +174,8 @@ results of its most recent play.
 	play to a dataframe. 
 ```
 - x: int (number of rolls)
-- .roll(): roll function from Die class 
-- gamedf: dataframe of rolls and die objects
+- roll(): roll function from Die class to roll the dice in the die object
+- gamedf: dataframe of rolls and die from the play
 
 
 ```
@@ -184,7 +184,7 @@ results of its most recent play.
 	wide form, the default form.
 ```
 - form: string ('narrow' or 'wide')
-- 
+- gamedf: dataframe of rolls and die from the play in wide or narrow form
 
 ### Analyzer Class
 An analyzer takes the results of a single game and computes various descriptive statistical properties 
@@ -197,15 +197,19 @@ def __init__(self, game_obj):
         The init method takes a game object from the Game class as its input parameter and infers the data 
 	type of the die faces used.
 ```
-- game_obj:
+- game_obj: game object from the Game class
+- face_dtype: type of die faces used
 
 
 ```
     def jackpot(self):
-        The jackpot method computes how many times the game resulted in all faces being identical. It returns an 
-	integer for the number of jackpots and stores the results in a dataframe.
+        The jackpot method computes how many times the game resulted in all faces being identical. 
+	It returns an integer for the number of jackpots and stores the results in a dataframe.
 ```
-- jackpotdf:
+- jackpotdf: empty dataframe to save jackpots to
+- game_obj: game object from the Game class 
+- gamedf: dataframe of rolls and die from Game class to analyze for jackpots
+- count: count of jackpots from game
 
 
 ```
@@ -213,8 +217,9 @@ def combo(self):
         The combo method computes the distinct combinations of faces rolled, along with their counts. Combinations are 
 	sorted and and saved as a multi-columned index.
 ```
--
--
+- game_obj: game object from the Game class 
+- gamedf: dataframe of rolls and die from Game class to analyze for combos
+- data: dataframe of distinct combinations of faces rolled
 
 
 ```
@@ -222,8 +227,11 @@ def combo(self):
         The faceCountsPerRoll method computes how many times a given face is rolled in each event. It stores the 
 	results as a dataframe that has an index of the roll number and face values as columns.
 ```
--
--
+- game_obj: game object from the Game class 
+- die_obj: list of already instantiated similar Die objects from Die class
+- faces: array of strings or numbers from Die class
+- gamedf: dataframe of rolls and die from Game class to analyze for face counts per roll
+- facecount: dataframe of face counts per roll with index of the roll number and face values as columns 
 
 
 
