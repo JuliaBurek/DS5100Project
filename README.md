@@ -111,11 +111,13 @@ Roll 8	1	1	0	0
 Roll 9	0	2	0	0
 Roll 10	1	1	0	0
 ```
-### API Description
-#### Die Class
-A die has a number of “faces” and weights, and can be rolled to select a face. The Die class takes an array of faces and initializes the weights to 1.0 for each face which can be changed. The die has one behavior, which is to be rolled one or more times.
+## API Description
+### Die Class
+A die has a number of “faces” and weights, and can be rolled to select a face. The Die class takes an array 
+of faces and initializes the weights to 1.0 for each face which can be changed. The die has one behavior, 
+which is to be rolled one or more times.
 
-**Methods and Attributes**
+#### Methods and Attributes
 ```
 def __init__(self, faces):
 	The init method initializes the die with an array of faces as an argument.
@@ -152,27 +154,82 @@ def show(self):
 
 
 
-#### Game Class
+### Game Class
 A game consists of rolling one or more dice of the same kind one or more times. The Game class
 takes a die object from the Die class and has a behavior to play a game. The class also keeps the 
 results of its most recent play.
 
-**Methods and Attributes**
+#### Methods and Attributes
+```
+    def __init__(self, die_obj):
+        The init method initializes a die object from the Die class and an empty dataframe to be used in the other methods.
+```
+- die_obj:
+- gamedf: 
 
-#### Analyzer Class
+
+```
+    def play(self, x):
+        The play method takes a parameter of how many times the dice should be rolled and saves the result of the 
+	play to a dataframe. 
+```
+- x: int (number of rolls)
+- .roll(): roll function from Die class 
+- gamedf: dataframe of rolls and die objects
+
+
+```
+    def show(self, form = 'wide'):
+        The show method passes the dataframe to the user. It takes a parameter to return the dataframe in narrow or 
+	wide form, the default form.
+```
+- form: string ('narrow' or 'wide')
+- 
+
+### Analyzer Class
 An analyzer takes the results of a single game and computes various descriptive statistical properties 
 about it, including face counts per roll, a jackpot count, and a combo count. The analyzer class takes 
 a game object from the Game class to perform the methods on.
 
-**Methods and Attributes**
+#### Methods and Attributes
+```
+def __init__(self, game_obj):
+        The init method takes a game object from the Game class as its input parameter and infers the data 
+	type of the die faces used.
+```
+- game_obj:
 
-A list of all classes with their public methods and attributes.
-Each item should show their docstrings.
-All paramters (with data types and defaults) should be described.
-All return values should be described.
-Do not describe private methods and attributes.
+
+```
+    def jackpot(self):
+        The jackpot method computes how many times the game resulted in all faces being identical. It returns an 
+	integer for the number of jackpots and stores the results in a dataframe.
+```
+- jackpotdf:
+
+
+```
+def combo(self):
+        The combo method computes the distinct combinations of faces rolled, along with their counts. Combinations are 
+	sorted and and saved as a multi-columned index.
+```
+-
+-
+
+
+```
+ def faceCountsPerRoll(self):
+        The faceCountsPerRoll method computes how many times a given face is rolled in each event. It stores the 
+	results as a dataframe that has an index of the roll number and face values as columns.
+```
+-
+-
+
 
 
 ### Manifest
 - montecarlo.py
+- montecarlo_tests.py
+- montecarlo_tests.txt
+- 
 
