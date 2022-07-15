@@ -18,4 +18,10 @@ Julia Burek (jeb5pb)
 ##### Analyzing games
 
 
+### API Description
+
+
+
+## Manifest
+- montecarlo.py
 
