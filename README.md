@@ -228,6 +228,7 @@ def combo(self):
 
 
 ### Manifest
+- README.md
 - montecarlo.py
 - montecarlo_tests.py
 - montecarlo_tests.txt
