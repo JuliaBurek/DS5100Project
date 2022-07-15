@@ -85,22 +85,22 @@ die1.weights(2,10)
 die2 = Die([1,2,3,4])
 die2.weights(2,10)
 Gameobject = Game([die1,die2])
-Gameobject.play(100)
+Gameobject.play(10)
 Analyzerobject.faceCountsPerRoll()
 ```
 ```
 	1	2	3	4
-Roll 1	0	2	0	0
+Roll 1	0	1	1	0
 Roll 2	0	2	0	0
 Roll 3	0	2	0	0
-Roll 4	1	1	0	0
-Roll 5	0	1	0	1
-...	...	...	...	...
-Roll 96	0	2	0	0
-Roll 97	1	1	0	0
-Roll 98	0	2	0	0
-Roll 99	0	2	0	0
-Roll 100	0	2	0
+Roll 4	0	2	0	0
+Roll 5	1	1	0	0
+Roll 6	0	2	0	0
+Roll 7	0	2	0	0
+Roll 8	1	1	0	0
+Roll 9	0	2	0	0
+Roll 10	1	1	0	0
+
 ```
 ### API Description
 
