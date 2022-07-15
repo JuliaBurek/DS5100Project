@@ -161,7 +161,7 @@ results of its most recent play.
 
 #### Methods and Attributes
 ```
-    def __init__(self, die_obj):
+def __init__(self, die_obj):
         The init method initializes a die object from the Die class and an empty dataframe to be used in the other methods.
 ```
 - die_obj: list of already instantiated similar Die objects from Die class
@@ -169,7 +169,7 @@ results of its most recent play.
 
 
 ```
-    def play(self, x):
+def play(self, x):
         The play method takes a parameter of how many times the dice should be rolled and saves the result of the 
 	play to a dataframe. 
 ```
@@ -179,7 +179,7 @@ results of its most recent play.
 
 
 ```
-    def show(self, form = 'wide'):
+def show(self, form = 'wide'):
         The show method passes the dataframe to the user. It takes a parameter to return the dataframe in narrow or 
 	wide form, the default form.
 ```
@@ -202,7 +202,7 @@ def __init__(self, game_obj):
 
 
 ```
-    def jackpot(self):
+def jackpot(self):
         The jackpot method computes how many times the game resulted in all faces being identical. 
 	It returns an integer for the number of jackpots and stores the results in a dataframe.
 ```
