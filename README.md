@@ -6,14 +6,14 @@ Julia Burek (jeb5pb)
 ```
 !pip install -e .
 ```
+```
+Running setup.py develop for MonteCarloPackage
+Successfully installed MonteCarloPackage-1.0.0
+```
 
 ##### Importing
 ```
 from montecarlo import Die, Game, Analyzer
-```
-```
-Running setup.py develop for MonteCarloPackage
-Successfully installed MonteCarloPackage-1.0.0
 ```
 
 ##### Creating dice
