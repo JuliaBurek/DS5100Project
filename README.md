@@ -115,22 +115,15 @@ Roll 10	1	1	0	0
 #### Die Class
 A die has a number of “faces” and weights, and can be rolled to select a face. The Die class takes an array of faces and initializes the weights to 1.0 for each face which can be changed. The die has one behavior, which is to be rolled one or more times.
 
+
+1. def __init__(self, faces):
 ```
-def __init__(self, faces):
-        '''
-        The init method initializes the die with an array of faces as an argument.
-	It initializes the weights to 1.0 for each face and saves both faces and weights 
-	to a dataframe that is used for other methods in the class.
-    
-        PURPOSE: Given an array of faces, initializes the weights to 1.0 for each face. Saves faces and weights to a dataframe.
-    
-        INPUTS
-        faces   array of strings or numbers      
-        '''
-        self.faces = faces
-        self.df = pd.DataFrame(columns=faces)
-        self.df.loc[0] = 1.0
+The init method initializes the die with an array of faces as an argument.
+It initializes the weights to 1.0 for each face and saves both faces and weights 
+to a dataframe that is used for other methods in the class.  
 ```
+- faces: array of strings or numbers   
+- df: dataframe of faces and weights
 
 ```
     def weights(self, face, weight):
