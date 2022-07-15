@@ -75,24 +75,32 @@ Gameobject.play(100)
 Analyzerobject.combo()
 ```
 ```
-		Count
-Die 1	Die 2	
-1	2	7
-3	1
-2	1	4
-2	61
-3	5
-4	6
-3	2	6
-4	1	2
-2	8
+
 ```
 
 - Face Counts Per Roll Method
 ```
-
+die1 = Die([1,2,3,4])
+die1.weights(2,10)
+die2 = Die([1,2,3,4])
+die2.weights(2,10)
+Gameobject = Game([die1,die2])
+Gameobject.play(100)
+Analyzerobject.faceCountsPerRoll()
 ```
 ```
+1	2	3	4
+Roll 1	0	2	0	0
+Roll 2	0	2	0	0
+Roll 3	0	2	0	0
+Roll 4	1	1	0	0
+Roll 5	0	1	0	1
+...	...	...	...	...
+Roll 96	0	2	0	0
+Roll 97	1	1	0	0
+Roll 98	0	2	0	0
+Roll 99	0	2	0	0
+Roll 100	0	2	0	0
 
 ```
 ### API Description
