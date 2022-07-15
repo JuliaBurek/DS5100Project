@@ -49,7 +49,7 @@ Roll 10	2	3
 ```
 
 ### Analyzing games
-- Jackpot Method
+#### Jackpot Method
 ```
 die1 = Die([1,2,3,4])
 die1.weights(2,10)
@@ -64,7 +64,8 @@ Analyzerobject.jackpot()
 Jackpot    64
 dtype: int64
 ```
-- Combo Method
+
+#### Combo Method
 ```
 die1 = Die([1,2,3,4])
 die2 = Die([1,2,3,4])
@@ -85,7 +86,8 @@ Die 1	Die 2
 4	3	1
 	4	2
 ```
-- Face Counts Per Roll Method
+
+#### Face Counts Per Roll Method
 ```
 die1 = Die([1,2,3,4])
 die1.weights(2,10)
