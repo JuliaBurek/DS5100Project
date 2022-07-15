@@ -65,8 +65,36 @@ Jackpot    64
 dtype: int64
 ```
 - Combo Method
+```
+die1 = Die([1,2,3,4])
+die1.weights(2,10)
+die2 = Die([1,2,3,4])
+die2.weights(2,10)
+Gameobject = Game([die1,die2])
+Gameobject.play(100)
+Analyzerobject.combo()
+```
+```
+		Count
+Die 1	Die 2	
+1	2	7
+3	1
+2	1	4
+2	61
+3	5
+4	6
+3	2	6
+4	1	2
+2	8
+```
 
 - Face Counts Per Roll Method
+```
+
+```
+```
+
+```
 ### API Description
 
 
