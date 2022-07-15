@@ -8,7 +8,9 @@ Julia Burek (jeb5pb)
 ```
 
 ##### Importing
-
+```
+from montecarlo import Die, Game, Analyzer
+```
 
 ##### Creating dice
 ```
