@@ -11,6 +11,10 @@ Julia Burek (jeb5pb)
 ```
 from montecarlo import Die, Game, Analyzer
 ```
+```
+Running setup.py develop for MonteCarloPackage
+Successfully installed MonteCarloPackage-1.0.0
+```
 
 ##### Creating dice
 ```
