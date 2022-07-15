@@ -2,7 +2,7 @@
 Julia Burek (jeb5pb)
 
 ## Synopsis
-#### Installing
+### Installing
 ```
 !pip install -e .
 ```
@@ -11,12 +11,12 @@ Running setup.py develop for MonteCarloPackage
 Successfully installed MonteCarloPackage-1.0.0
 ```
 
-#### Importing
+### Importing
 ```
 from montecarlo import Die, Game, Analyzer
 ```
 
-#### Creating dice
+### Creating dice
 ```
 Dieobject = Die([1,2,3,4])
 Dieobject.faces
@@ -26,7 +26,7 @@ Dieobject.weights(2,10)
 	1	2	3	4
 0	1.0	10.0	1.0	1.0
 ```
-#### Playing games
+### Playing games
 ```
 die1 = Die([1,2,3,4])
 die2 = Die([1,2,3,4])
@@ -48,7 +48,7 @@ Roll 9	1	1
 Roll 10	2	3
 ```
 
-#### Analyzing games
+### Analyzing games
 - Jackpot Method
 ```
 die1 = Die([1,2,3,4])
