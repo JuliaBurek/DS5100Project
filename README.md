@@ -115,37 +115,57 @@ Roll 10	1	1	0	0
 #### Die Class
 A die has a number of “faces” and weights, and can be rolled to select a face. The Die class takes an array of faces and initializes the weights to 1.0 for each face which can be changed. The die has one behavior, which is to be rolled one or more times.
 
+**Methods and Attributes**
+```
+def __init__(self, faces):
+	The init method initializes the die with an array of faces as an argument.
+	It initializes the weights to 1.0 for each face and saves both faces and weights 
+	to a dataframe that is used for other methods in the class.
+```
+- faces: array of strings or numbers
+- df: dataframe of faces and weights	
 
-1. def __init__(self, faces):
+
 ```
-The init method initializes the die with an array of faces as an argument.
-It initializes the weights to 1.0 for each face and saves both faces and weights 
-to a dataframe that is used for other methods in the class.  
+def weights(self, face, weight):
+	The weights method changes the weight of a single face. It takes a face value and weight
+	value and changes the weight of the face if it is in the array of faces. 
 ```
-- faces: array of strings or numbers   
+- face: string or number of face to be changed
+- weight: int or float of new weight
+
+
+```
+def roll(self, rolls=1):
+	The roll method rolls the die one or more times. It returns a list of outcomes after 
+	taking a random sample from the vector of faces according to their weights. The number of
+	rolls defaults to 1.
+```
+- rolls: int (number of rolls)
+
+
+```
+def show(self):
+	The show method displays the die's current set of faces and weights in a dataframe.
+```
 - df: dataframe of faces and weights
 
-```
-    def weights(self, face, weight):
-        '''
-        The weights method changes the weight of a single face. It takes a face value and weight value and changes the weight of the face if it is in the array of faces. 
-    
-        PURPOSE: Given a face and weight, changes the weight of a single face if the face is in the array and the weight is a float or int. Returns False if face is not in the array.
-    
-        INPUTS
-        face     string or number
-        weight   int or float 
-        '''
-        if face in self.faces:
-            if type(weight) == float or type(weight) == int:
-                self.df.at[0,face] = weight
-        else:
-            return False
-```
+
 
 #### Game Class
+A game consists of rolling one or more dice of the same kind one or more times. The Game class
+takes a die object from the Die class and has a behavior to play a game. The class also keeps the 
+results of its most recent play.
+
+**Methods and Attributes**
 
 #### Analyzer Class
+An analyzer takes the results of a single game and computes various descriptive statistical properties 
+about it, including face counts per roll, a jackpot count, and a combo count. The analyzer class takes 
+a game object from the Game class to perform the methods on.
+
+**Methods and Attributes**
+
 A list of all classes with their public methods and attributes.
 Each item should show their docstrings.
 All paramters (with data types and defaults) should be described.
