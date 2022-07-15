@@ -89,7 +89,7 @@ Gameobject.play(100)
 Analyzerobject.faceCountsPerRoll()
 ```
 ```
-1	2	3	4
+	1	2	3	4
 Roll 1	0	2	0	0
 Roll 2	0	2	0	0
 Roll 3	0	2	0	0
@@ -100,8 +100,7 @@ Roll 96	0	2	0	0
 Roll 97	1	1	0	0
 Roll 98	0	2	0	0
 Roll 99	0	2	0	0
-Roll 100	0	2	0	0
-
+Roll 100	0	2	0
 ```
 ### API Description
 
