@@ -49,8 +49,24 @@ Roll 10	2	3
 ```
 
 ##### Analyzing games
+- Jackpot Method
+```
+die1 = Die([1,2,3,4])
+die1.weights(2,10)
+die2 = Die([1,2,3,4])
+die2.weights(2,10)
+Gameobject = Game([die1,die2])
+Gameobject.play(100)
+Analyzerobject = Analyzer(Gameobject)
+Analyzerobject.jackpot()
+```
+```
+Jackpot    64
+dtype: int64
+```
+- Combo Method
 
-
+- Face Counts Per Roll Method
 ### API Description
 
 
