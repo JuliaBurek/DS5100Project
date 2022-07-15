@@ -1,7 +1,5 @@
-# DS5100Project
+# Monte Carlo Simulator
 Julia Burek (jeb5pb)
-
-## Monte Carlo Simulator
 
 ### Synopsis
 ##### Installing
