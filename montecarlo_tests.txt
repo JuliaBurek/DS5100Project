@@ -1,0 +1,16 @@
+test_10_combo (__main__.MonteCarloTestSuite) ... ok
+test_11_faceCountsPerRoll (__main__.MonteCarloTestSuite) ... ok
+test_1_init (__main__.MonteCarloTestSuite) ... ok
+test_2_weights (__main__.MonteCarloTestSuite) ... ok
+test_3_roll (__main__.MonteCarloTestSuite) ... ok
+test_4_show (__main__.MonteCarloTestSuite) ... ok
+test_5_init (__main__.MonteCarloTestSuite) ... ok
+test_6_play (__main__.MonteCarloTestSuite) ... ok
+test_7_show (__main__.MonteCarloTestSuite) ... ok
+test_8_init (__main__.MonteCarloTestSuite) ... ok
+test_9_jackpot (__main__.MonteCarloTestSuite) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.028s
+
+OK
