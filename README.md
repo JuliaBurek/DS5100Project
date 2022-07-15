@@ -231,5 +231,7 @@ def combo(self):
 - montecarlo.py
 - montecarlo_tests.py
 - montecarlo_tests.txt
-- 
+- FinalProjectSubmissionTemplate.ipynb
+- setup.py
+- __init__.py
 
